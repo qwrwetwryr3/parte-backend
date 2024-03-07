@@ -1,22 +1,38 @@
 import mongoose from "mongoose";
 
 const taskSchema=new mongoose.Schema({
-    title: {
+    nombre: {
         type: String,
-        required: true,
+        //required: true,
     },
-    description: {
+    rut: {
         type: String,
-        required: true,
+        //required: true,
     },
-    date: {
-        type: Date,
-        default: Date.now,
+    estadoCivil: {
+        type: String,
+        //required: true,
+    },
+    fechaNacimiento: {
+        type: String,
+        //required: true,
+    },
+    edad: {
+        type: String,
+        //required: true,
+    },
+    celular: {
+        type: String,
+        //required: true,
+    },
+    correo: {
+        type: String,
+        //required: true,
     },
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
-        required: true
+        //required: true
     }
 },{
     timestamps: true
